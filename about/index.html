@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
     
-</head>
+<link rel="stylesheet" href="/css/prism-atom-dark.css" type="text/css"></head>
 
 
 <body>
@@ -249,21 +249,21 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/" target="_blank">1</a></span>
+    <span class="count"><a href="/" target="_blank">2</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories" target="_blank">2</a></span>
+    <span class="count"><a href="/categories" target="_blank">1</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags" target="_blank">3</a></span>
+    <span class="count"><a href="/tags" target="_blank">1</a></span>
     <span class="name">标签</span>
 </div>
 
@@ -278,27 +278,27 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/" target="_blank">1</a></span>
+    <span class="count"><a href="/" target="_blank">2</a></span>
     <span class="name">文章</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/categories" target="_blank">2</a></span>
+    <span class="count"><a href="/categories" target="_blank">1</a></span>
     <span class="name">分类</span>
 </div>
 
 
 
 <div class="statis">
-    <span class="count"><a href="/tags" target="_blank">3</a></span>
+    <span class="count"><a href="/tags" target="_blank">1</a></span>
     <span class="name">标签</span>
 </div>
 
                                 </div>
                                 <div class="title">小明</div>
-                                <div class="career">Front-end engineer</div>
+                                <div class="career"></div>
                                 <div class="social-link hide-on-large-only" data-aos="zoom-in-left">
                                     
     <a href="https://github.com/jack0yan" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
@@ -306,6 +306,10 @@
     </a>
 
 
+
+    <a href="mailto:2820947524@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
 
 
 
@@ -336,6 +340,10 @@
     </a>
 
 
+
+    <a href="mailto:2820947524@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
 
 
 
@@ -419,7 +427,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [1,0,0,0,0,0,0,0,0,0,0,0,0],
+                data: [0,0,0,0,0,0,0,0,0,0,0,0,2],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -461,7 +469,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"灵光一现","value":0},{"name":"书籍","value":1}],
+                data: [{"name":"书籍","value":2}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -485,7 +493,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["JavaScript","随想","设计艺术"]
+                data: ["JavaScript"]
             }
         ],
         yAxis: [
@@ -498,7 +506,7 @@
                 type: 'bar',
                 color: ['#82d3f4'],
                 barWidth : 18,
-                data: [1,0,0],
+                data: [1],
                 markPoint: {
                     symbolSize: 45,
                     data: [{
@@ -532,47 +540,6 @@
                 
 
                 
-                
-<div id="myGallery" class="my-gallery">
-    <div class="title center-align" data-aos="zoom-in-up">
-        <i class="fa fa-photo"></i>&nbsp;&nbsp;相册
-    </div>
-    <div class="row">
-        
-        
-        <div class="photo col s12 m6 l4" data-aos="fade-up">
-            <div class="img-item" data-src="/medias/featureimages/0.jpg">
-                <img src="/medias/featureimages/0.jpg" class="responsive-img">
-            </div>
-        </div>
-        
-        <div class="photo col s12 m6 l4" data-aos="fade-up">
-            <div class="img-item" data-src="/medias/featureimages/1.jpg">
-                <img src="/medias/featureimages/1.jpg" class="responsive-img">
-            </div>
-        </div>
-        
-        <div class="photo col s12 m6 l4" data-aos="fade-up">
-            <div class="img-item" data-src="/medias/featureimages/2.jpg">
-                <img src="/medias/featureimages/2.jpg" class="responsive-img">
-            </div>
-        </div>
-        
-        
-    </div>
-</div>
-
-<script>
-    $(function () {
-        let animateClass = 'animated pulse';
-        $('#myGallery .photo').hover(function () {
-            $(this).addClass(animateClass);
-        }, function () {
-            $(this).removeClass(animateClass);
-        });
-    });
-</script>
-                
 
             </div>
         </div>
@@ -582,13 +549,13 @@
     <footer class="page-footer bg-color">
     <div class="container row center-align">
         <div class="col s12 m8 l8 copy-right">
-            <!-- 本站由&nbsp;&copy;<a href="http://jack0yan.github.io" target="_blank">小明</a>&nbsp;基于
+            <!-- 本站由&nbsp;&copy;<a href="https://jack0yan.github.io" target="_blank">小明</a>&nbsp;基于
            <a href="https://hexo.io/" target="_blank">Hexo</a>&nbsp;的
             <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>&nbsp;主题搭建 -->
             <br>
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">3.3k</span>&nbsp;字
+                class="white-color">5.6k</span>&nbsp;字
             
             
             
@@ -599,6 +566,10 @@
     </a>
 
 
+
+    <a href="mailto:2820947524@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
 
 
 
